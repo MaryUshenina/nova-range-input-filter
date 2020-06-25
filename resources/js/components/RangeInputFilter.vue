@@ -52,9 +52,9 @@
                 /**
                  * Dont refresh the page if user is still typing the values
                  */
-                if (Number.isNaN(parseInt(this.value.from)) !==
-                    Number.isNaN(parseInt(this.value.to))) {
-
+                if (!this.filter.options.filterOnSingleParamExists &&
+                    (Number.isNaN(parseInt(this.value.from)) !==
+                        Number.isNaN(parseInt(this.value.to)))) {
                     return
 
                 }
